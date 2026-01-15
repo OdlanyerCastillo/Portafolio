@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odlanyer Castillo | Portafolio Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #0f172a; color: #cbd5e1; scroll-behavior: smooth; }
+        .gradient-text { background: linear-gradient(to right, #3b82f6, #10b981); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(51, 65, 85, 0.5); }
+        .whatsapp-btn { position: fixed; bottom: 30px; right: 30px; background-color: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; items-center; font-size: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 1000; transition: transform 0.3s; }
+        .whatsapp-btn:hover { transform: scale(1.1); }
+    </style>
+</head>
+<body>
+
+    <a href="https://wa.me/584261117516?text=Hola%20Odlanyer,%20vi%20tu%20portafolio%20y%20me%20gustaría%20contactarte" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <nav class="fixed w-full z-50 p-4">
+        <div class="container mx-auto flex justify-between items-center glass p-4 rounded-2xl">
+            <span class="text-xl font-black text-white italic">ODLANYER.<span class="text-blue-500">DEV</span></span>
+            <div class="hidden md:flex gap-8 text-sm font-bold uppercase tracking-widest">
+                <a href="#proyectos" class="hover:text-blue-400 transition">Proyectos</a>
+                <a href="#experiencia" class="hover:text-blue-400 transition">Experiencia</a>
+                <a href="#formacion" class="hover:text-blue-400 transition">Certificaciones</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="h-screen flex flex-col justify-center items-center text-center px-4">
+        <div class="mb-6 relative">
+            <div class="w-32 h-32 rounded-full border-4 border-blue-500 overflow-hidden shadow-[0_0_20px_rgba(59,130,246,0.5)]">
+                <img src="https://media.licdn.com/dms/image/v2/D4E03AQGv5xQ8-Y6h6w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718214344555?e=1742428800&v=beta&t=H-8O8O8O8O8O8O8O8O8O8O8O8O8O8O8O8O8O8O8O8" alt="Odlanyer Castillo" class="w-full h-full object-cover">
+            </div>
+        </div>
+        <h1 class="text-5xl md:text-7xl font-black text-white mb-6 tracking-tighter">Odlanyer <span class="gradient-text">Castillo</span></h1>
+        <p class="max-w-2xl text-lg text-slate-400 mb-8 font-medium italic">
+            "A pesar de mi corta edad, he liderado despliegues tecnológicos nacionales en Damasco y gestionado incidentes críticos en Movilnet. Mi enfoque actual une la infraestructura TI con el desarrollo de software automatizado."
+        </p>
+        <div class="flex gap-4">
+            <a href="#proyectos" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-500 transition shadow-lg shadow-blue-500/20">Ver Proyectos</a>
+            <a href="mailto:Odlanyer.cr12@gmail.com" class="border border-slate-700 px-8 py-4 rounded-xl font-bold hover:bg-slate-800 transition">Contactar</a>
+        </div>
+    </header>
+
+    <section class="py-12 bg-slate-900/30">
+        <div class="container mx-auto px-4">
+            <p class="text-center text-slate-500 text-[10px] font-black uppercase tracking-[0.4em] mb-10">Trayectoria en Organizaciones Líderes</p>
+            <div class="flex flex-wrap justify-center items-center gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-700">
+                <span class="text-3xl font-black text-white italic tracking-tighter">MOVILNET</span>
+                <span class="text-3xl font-black text-white italic tracking-tighter">DAMASCO</span>
+                <span class="text-3xl font-black text-white italic tracking-tighter text-blue-400">REMOTERS</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="py-24 container mx-auto px-4">
+        <h2 class="text-3xl font-black text-white mb-16 flex items-center gap-4">
+            <span class="w-12 h-1 bg-blue-500 rounded-full"></span> PROYECTO DESTACADO
+        </h2>
+        <div class="glass rounded-[3rem] overflow-hidden flex flex-col lg:flex-row shadow-2xl border-slate-700/50">
+            <div class="lg:w-1/2 p-12">
+                <span class="text-blue-400 font-bold text-xs uppercase tracking-widest mb-4 block">Full Stack / Scraping</span>
+                <h3 class="text-4xl font-black text-white mb-6">Monitor de Tasas Real-Time</h3>
+                <p class="text-slate-400 mb-8 leading-relaxed">
+                    Desarrollo de un sistema de monitoreo financiero que automatiza la extracción de datos de **BCV** y **Binance P2P**. 
+                    El mayor reto técnico fue la sincronización de la zona horaria **VET (UTC-4)** para garantizar precisión absoluta en Caracas.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-blue-500/10 text-blue-400 px-4 py-2 rounded-lg text-[10px] font-black border border-blue-500/20 uppercase">Node.js</span>
+                    <span class="bg-blue-500/10 text-blue-400 px-4 py-2 rounded-lg text-[10px] font-black border border-blue-500/20 uppercase">Puppeteer</span>
+                    <span class="bg-blue-500/10 text-blue-400 px-4 py-2 rounded-lg text-[10px] font-black border border-blue-500/20 uppercase">Tailwind CSS</span>
+                </div>
+            </div>
+            <div class="lg:w-1/2 bg-slate-800/50 p-6 flex items-center justify-center">
+                <div class="w-full h-full min-h-[300px] rounded-2xl border border-slate-700 bg-[url('https://i.imgur.com/tu_captura.png')] bg-cover bg-center shadow-inner">
+                    <div class="w-full h-full bg-slate-900/40 flex items-center justify-center italic text-slate-500">Sincronizado con Caracas (UTC-4)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia" class="py-24 container mx-auto px-4">
+        <h2 class="text-3xl font-black text-white mb-16 flex items-center gap-4">
+            <span class="w-12 h-1 bg-emerald-500 rounded-full"></span> EXPERIENCIA PROFESIONAL
+        </h2>
+        <div class="space-y-10">
+            <div class="glass p-10 rounded-[2.5rem] border-l-8 border-emerald-500 hover:bg-slate-800/50 transition">
+                <div class="flex flex-col md:flex-row justify-between mb-6">
+                    <h3 class="text-2xl font-black text-white">Encargado de Infraestructura TI</h3>
+                    <span class="text-emerald-400 font-bold uppercase tracking-widest text-sm">Damasco | 2024 - 2025</span>
+                </div>
+                <ul class="text-slate-400 space-y-4 font-medium">
+                    <li>• Lideré la apertura de nuevas tiendas a nivel nacional, ejecutando la instalación de servidores, redes y CCTV desde cero.</li>
+                    <li>• Gestión integral de la arquitectura de red y seguridad perimetral electrónica.</li>
+                </ul>
+            </div>
+            <div class="glass p-10 rounded-[2.5rem] border-l-8 border-blue-500 hover:bg-slate-800/50 transition">
+                <div class="flex flex-col md:flex-row justify-between mb-6">
+                    <h3 class="text-2xl font-black text-white">Analista de Operaciones (NOC)</h3>
+                    <span class="text-blue-400 font-bold uppercase tracking-widest text-sm">Movilnet</span>
+                </div>
+                <p class="text-slate-400">Monitoreo crítico de la red nacional y gestión de incidencias de alto impacto bajo protocolos de alta disponibilidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="formacion" class="py-24 bg-slate-900/50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-black text-white mb-16 flex items-center gap-4">
+                <span class="w-12 h-1 bg-yellow-500 rounded-full"></span> FORMACIÓN & CERTIFICACIONES
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass p-8 rounded-3xl border-t-4 border-yellow-500">
+                    <i class="fas fa-terminal text-yellow-500 text-3xl mb-6"></i>
+                    <h3 class="text-xl font-bold text-white mb-2 uppercase">Linux Basic Commands</h3>
+                    <p class="text-slate-500 font-bold text-sm">Cisco Networking Academy</p>
+                </div>
+                <div class="glass p-8 rounded-3xl border-t-4 border-yellow-500">
+                    <i class="fas fa-code text-yellow-500 text-3xl mb-6"></i>
+                    <h3 class="text-xl font-bold text-white mb-2 uppercase">VIM Specialization</h3>
+                    <p class="text-slate-500 font-bold text-sm">Academy Standard</p>
+                </div>
+                <div class="glass p-8 rounded-3xl border-t-4 border-yellow-500">
+                    <i class="fas fa-user-graduate text-yellow-500 text-3xl mb-6"></i>
+                    <h3 class="text-xl font-bold text-white mb-2 uppercase">Full Stack Developer</h3>
+                    <p class="text-slate-500 font-bold text-sm">Formación Intensiva</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 text-center border-t border-slate-800">
+        <p class="text-slate-500 font-bold text-sm uppercase tracking-widest mb-4">Odlanyer Castillo © 2026</p>
+        <div class="flex justify-center gap-8 text-2xl text-slate-400">
+            <a href="https://linkedin.com/in/odlanyer-castillo" class="hover:text-blue-500 transition"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:Odlanyer.cr12@gmail.com" class="hover:text-blue-500 transition"><i class="fas fa-envelope"></i></a>
+            <a href="tel:04261117516" class="hover:text-blue-500 transition"><i class="fas fa-phone"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
