@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivo de Proyectos | Odlanyer Castillo</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body { background-color: #0f172a; color: #cbd5e1; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); }
+        .card-hover:hover { transform: translateY(-5px); border-color: #3b82f6; transition: 0.3s; }
+    </style>
+</head>
+<body class="py-12 px-6">
+
+    <div class="container mx-auto">
+        <a href="index.html" class="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-12 font-bold transition">
+            <i class="fas fa-arrow-left"></i> VOLVER AL INICIO
+        </a>
+
+        <h1 class="text-4xl md:text-6xl font-black text-white mb-4 italic uppercase tracking-tighter" data-aos="fade-right">
+            Archivo de <span class="text-blue-500">Proyectos</span>
+        </h1>
+        <p class="text-slate-400 mb-16 max-w-2xl" data-aos="fade-right">Documentación técnica de implementaciones de infraestructura, optimización y redes avanzadas.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="glass p-8 rounded-[2rem] card-hover flex flex-col" data-aos="fade-up">
+                <div class="text-blue-400 text-3xl mb-6"><i class="fas fa-microchip"></i></div>
+                <h3 class="text-2xl font-black text-white mb-4 italic">Optimización SRE (CPU -64%)</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
+                    Reducción masiva de carga en servidores Ubuntu mediante automatización Bash y reconfiguración de servicios críticos VS Code Server.
+                </p>
+                <div class="flex gap-2">
+                    <span class="text-[10px] font-black bg-blue-500/20 text-blue-400 px-3 py-1 rounded">BASH</span>
+                    <span class="text-[10px] font-black bg-blue-500/20 text-blue-400 px-3 py-1 rounded">SRE</span>
+                </div>
+            </div>
+
+            <div class="glass p-8 rounded-[2rem] card-hover flex flex-col" data-aos="fade-up" data-aos-delay="100">
+                <div class="text-orange-400 text-3xl mb-6"><i class="fas fa-shield-alt"></i></div>
+                <h3 class="text-2xl font-black text-white mb-4 italic">Firewall OPNsense</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
+                    Implementación de firewall perimetral con segmentación de VLANs, VPN de acceso remoto y protección IDS/IPS activa.
+                </p>
+                <div class="flex gap-2">
+                    <span class="text-[10px] font-black bg-orange-500/20 text-orange-400 px-3 py-1 rounded">NET-SEC</span>
+                    <span class="text-[10px] font-black bg-orange-500/20 text-orange-400 px-3 py-1 rounded">VPN</span>
+                </div>
+            </div>
+
+            <div class="glass p-8 rounded-[2rem] card-hover flex flex-col" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-green-400 text-3xl mb-6"><i class="fas fa-chart-line"></i></div>
+                <h3 class="text-2xl font-black text-white mb-4 italic">Monitoreo Netdata</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
+                    Despliegue de nodos de monitoreo en tiempo real para supervisión de hardware crítico i5-3570 y detección de anomalías.
+                </p>
+                <div class="flex gap-2">
+                    <span class="text-[10px] font-black bg-green-500/20 text-green-400 px-3 py-1 rounded">METRICS</span>
+                    <span class="text-[10px] font-black bg-green-500/20 text-green-400 px-3 py-1 rounded">NETDATA</span>
+                </div>
+            </div>
+            
+                <div class="glass p-8 rounded-[2rem] card-hover flex flex-col" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-purple-400 text-3xl mb-6"><i class="fas fa-server"></i></div>
+                    <h3 class="text-2xl font-black text-white mb-4 italic">Monitorización Avanzada con Grafana/Prometheus/cAdvisor</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
+                        Integración de <b>Grafana</b>, <b>Prometheus</b> y <b>cAdvisor</b> para visualización de métricas de contenedores Docker, alertas automatizadas y dashboards personalizados en tiempo real.
+                    </p>
+                    <div class="flex gap-2">
+                        <span class="text-[10px] font-black bg-purple-500/20 text-purple-400 px-3 py-1 rounded">GRAFANA</span>
+                        <span class="text-[10px] font-black bg-purple-500/20 text-purple-400 px-3 py-1 rounded">PROMETHEUS</span>
+                        <span class="text-[10px] font-black bg-purple-500/20 text-purple-400 px-3 py-1 rounded">CADVISOR</span>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+    <footer class="py-20 text-center opacity-50 mt-12">
+        <p class="text-[10px] font-black uppercase tracking-[0.5em] text-slate-600">Odlanyer Castillo © 2026</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000 });</script>
+</body>
+</html>
