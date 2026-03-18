@@ -12,7 +12,7 @@
     <style>
         body { background-color: #0f172a; color: #cbd5e1; scroll-behavior: smooth; }
         .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); }
-        .gradient-text { background: linear-gradient(90deg, #3b82f6, #10b981); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .gradient-text { background: linear-gradient(90deg, #3b82f6, #10b981); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .card-hover { transition: all 0.3s ease; }
         .card-hover:hover { transform: translateY(-5px); border-color: #3b82f6; }
         .wa-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 30px; color: white; z-index: 1000; box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
@@ -28,8 +28,8 @@
         <div class="container mx-auto flex justify-between items-center glass p-4 rounded-2xl">
             <span class="text-xl font-black text-white italic">ODLANYER.<span class="text-blue-500">SEC</span></span>
             <div class="hidden md:flex gap-8 font-bold text-xs uppercase tracking-widest">
-                <a href="#proyectos" class="hover:text-blue-400">Proyectos</a>
                 <a href="#habilidades" class="hover:text-blue-400">Habilidades</a>
+                <a href="#proyectos" class="hover:text-blue-400">Proyectos</a>
                 <a href="#experiencia" class="hover:text-blue-400">Experiencia</a>
             </div>
         </div>
@@ -65,10 +65,10 @@
                 <h2 class="text-2xl font-black text-white mb-8 italic">Hard Skills</h2>
                 <div class="grid grid-cols-2 gap-4">
                     <div class="glass p-4 rounded-xl flex items-center gap-3 card-hover">
-                        <i class="fab fa-linux text-blue-500 text-2xl"></i> <span>Hardening Linux</span>
+                        <i class="fab fa-linux text-blue-500 text-2xl"></i> <span>System Admin Linux</span>
                     </div>
                     <div class="glass p-4 rounded-xl flex items-center gap-3 card-hover">
-                        <i class="fab fa-windows text-blue-500 text-2xl"></i> <span>Admistrador Windows</span>
+                        <i class="fab fa-windows text-blue-500 text-2xl"></i> <span>System Admin Windows</span>
                     </div>
                     <div class="glass p-4 rounded-xl flex items-center gap-3 card-hover">
                         <i class="fas fa-user-secret text-blue-500 text-2xl"></i> <span>Ethical Hacking</span>
@@ -82,15 +82,15 @@
                 </div>
             </div>
             <div data-aos="fade-left">
-                <h2 class="text-2xl font-black text-white mb-8 italic">Especialidad</h2>
+                <h2 class="text-2xl font-black text-white mb-8 italic">Habilidades Aprendidas</h2>
                 <div class="space-y-4">
                     <div class="glass p-4 rounded-xl border-l-4 border-blue-500">
-                        <h4 class="font-bold text-white">Respuesta a Incidentes (Blue Team)</h4>
-                        <p class="text-sm text-slate-400">Análisis forense, erradicación de amenazas y remediación de infraestructuras comprometidas.</p>
+                        <h4 class="font-bold text-white">Monitoreo y Soporte de Infraestructura</h4>
+                        <p class="text-sm text-slate-400">Experiencia en seguimiento de servicios, atencion de incidencias y soporte operativo en entornos Linux/Windows.</p>
                     </div>
                     <div class="glass p-4 rounded-xl border-l-4 border-emerald-500">
-                        <h4 class="font-bold text-white">Seguridad Ofensiva (Red Team)</h4>
-                        <p class="text-sm text-slate-400">Pruebas de intrusión en laboratorios controlados para fortalecer la seguridad perimetral.</p>
+                        <h4 class="font-bold text-white">Automatizacion y Mejora Continua</h4>
+                        <p class="text-sm text-slate-400">Uso de scripts y buenas practicas para optimizar tareas repetitivas, respaldos y estabilidad de sistemas.</p>
                     </div>
                 </div>
             </div>
@@ -104,18 +104,32 @@
 
         <div class="glass rounded-[3rem] overflow-hidden card-hover p-10 flex flex-col lg:flex-row gap-10 mb-12" data-aos="zoom-in">
             <div class="lg:w-1/2">
-                <h3 class="text-3xl font-black text-white mb-4 italic">Monitor de Tasas Caracas</h3>
+                <h3 class="text-3xl font-black text-white mb-4 italic">Bot Empresarial con OpenClaw</h3>
                 <p class="text-slate-400 leading-relaxed mb-6">
-                    Sistema automatizado de <b>Web Scraping</b> para sincronización de divisas en tiempo real. Un ejemplo de automatización Full Stack aplicada.
+                    Implementación de asistente empresarial para gestión de solicitudes entre departamentos, actuando como un empleado digital para agilizar procesos internos.
                 </p>
                 <div class="flex gap-4">
-                    <span class="text-xs font-bold bg-blue-500/20 text-blue-400 px-3 py-1 rounded">PUPPETEER</span>
+                    <span class="text-xs font-bold bg-blue-500/20 text-blue-400 px-3 py-1 rounded">OPENCLAW</span>
+                    <span class="text-xs font-bold bg-blue-500/20 text-blue-400 px-3 py-1 rounded">AUTOMATIZACION</span>
                 </div>
             </div>
             <div class="lg:w-1/2 relative group">
                 <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-2xl blur opacity-25"></div>
-                <div class="relative bg-slate-900 rounded-2xl border border-slate-700 overflow-hidden p-8 flex items-center justify-center">
-                    <span class="text-slate-500 font-mono text-sm uppercase italic">Live Currency Sync</span>
+                <div class="relative bg-slate-900 rounded-2xl border border-slate-700 overflow-hidden shadow-2xl">
+                    <div class="bg-slate-800 px-4 py-2 flex items-center justify-between border-b border-slate-700">
+                        <div class="flex gap-2">
+                            <div class="w-2 h-2 rounded-full bg-red-500"></div>
+                            <div class="w-2 h-2 rounded-full bg-yellow-500"></div>
+                            <div class="w-2 h-2 rounded-full bg-green-500"></div>
+                        </div>
+                        <span class="text-slate-400 font-mono text-[11px] uppercase tracking-widest">OpenClaw Session</span>
+                    </div>
+                    <div class="p-6 font-mono text-xs text-cyan-300 min-h-[170px] flex flex-col justify-center gap-2">
+                        <p>&gt; DEPARTAMENTO: Asuntos Academicos</p>
+                        <p>&gt; SOLICITUD: Generar Reporte de Inscripciones</p>
+                        <p>&gt; ESTADO: Canalizado a Administracion Correctamente</p>
+                        <p class="text-white mt-3 font-black uppercase tracking-widest">Bot Operativo en Flujo Corporativo</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -154,192 +168,23 @@
             </div>
         </div>
 
-        <div class="text-center" data-aos="fade-up">
-            <a href="proyectos.html" class="inline-flex items-center gap-4 border-2 border-blue-500 text-blue-500 px-10 py-4 rounded-2xl font-black hover:bg-blue-500 hover:text-white transition shadow-lg shadow-blue-500/10 uppercase tracking-widest">
-                Archivo de Proyectos Técnicos
-                <i class="fas fa-external-link-alt"></i>
-            </a>
-        </div>
-    </section>
-
-    <section id="experiencia" class="py-24 container mx-auto px-6">
-        <h2 class="text-3xl font-black text-white mb-12" data-aos="fade-right">Trayectoria Profesional</h2>
-        <div class="space-y-8">
-            <div class="glass p-8 rounded-3xl border-l-4 border-emerald-500 card-hover" data-aos="fade-up">
-                <h3 class="text-xl font-bold text-white italic">Encargado de Infraestructura TI</h3>
-                <p class="text-emerald-400 text-sm font-bold mb-4">Damasco | Despliegue Nacional</p>
-                <p class="text-slate-400 text-sm italic">Liderazgo en gestión de servidores centrales y CCTV.</p>
-            </div>
-            <div class="glass p-8 rounded-3xl border-l-4 border-blue-500 card-hover" data-aos="fade-up" data-aos-delay="200">
-                <h3 class="text-xl font-bold text-white italic">Analista NOC</h3>
-                <p class="text-blue-400 text-sm font-bold mb-4">Movilnet</p>
-                <p class="text-slate-400 text-sm">Monitoreo de infraestructura crítica nacional.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-20 text-center border-t border-slate-800">
-        <p class="text-[10px] font-black uppercase tracking-[0.5em] text-slate-600">Odlanyer Castillo | 2026</p>
-    </footer>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({ duration: 1000, once: true });</script>
-</body>
-</html>
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odlanyer Castillo | Especialista en Sistema e Infraestructura TI </title>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <style>
-        body { background-color: #0f172a; color: #cbd5e1; scroll-behavior: smooth; }
-        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); }
-        .gradient-text { background: linear-gradient(90deg, #3b82f6, #10b981); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .card-hover { transition: all 0.3s ease; }
-        .card-hover:hover { transform: translateY(-5px); border-color: #3b82f6; }
-        .wa-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 30px; color: white; z-index: 1000; box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
-    </style>
-</head>
-<body>
-
-    <a href="https://wa.me/584261117516" class="wa-float hover:scale-110 transition" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <nav class="fixed w-full z-50 p-6">
-        <div class="container mx-auto flex justify-between items-center glass p-4 rounded-2xl">
-            <span class="text-xl font-black text-white italic">ODLANYER.<span class="text-blue-500">SEC</span></span>
-            <div class="hidden md:flex gap-8 font-bold text-xs uppercase tracking-widest">
-                <a href="#proyectos" class="hover:text-blue-400">Proyectos</a>
-                <a href="#habilidades" class="hover:text-blue-400">Habilidades</a>
-                <a href="#experiencia" class="hover:text-blue-400">Experiencia</a>
-            </div>
-        </div>
-    </nav>
-
-    <section class="h-screen flex flex-col justify-center items-center px-4 text-center">
-        <div class="mb-8" data-aos="zoom-in">
-            <div class="w-44 h-44 rounded-full border-4 border-blue-500 p-1 shadow-2xl overflow-hidden">
-                <img src="foto tipo carnet/tipo carnet.jpg" alt="Odlanyer Castillo" class="w-full h-full object-cover rounded-full">
-            </div>
-        </div>
-        <h1 class="text-5xl md:text-7xl font-black text-white mb-4" data-aos="fade-up">Odlanyer Castillo</h1>
-        
-        <h2 class="text-blue-500 text-lg md:text-2xl font-bold uppercase tracking-[0.3em] mb-6 italic" data-aos="fade-up" data-aos-delay="100">
-            Especialista en Sistema e Infraestructura TI
-        </h2>
-
-        <p class="text-xl text-slate-400 max-w-2xl font-medium mb-8" data-aos="fade-up" data-aos-delay="200">
-            Enfocado en la optimización de sistemas críticos, defensa activa y respuesta ante incidentes. Experto en infraestructuras Linux y redes de alto rendimiento.
-        </p>
-        
-        <div data-aos="fade-up" data-aos-delay="400">
-            <a href="CV odlanyer-2026.pdf" download="CV_Odlanyer_Castillo.pdf" class="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-2xl font-black hover:scale-105 transition shadow-xl shadow-blue-500/20">
-                <i class="fas fa-file-download text-xl"></i>
-                DESCARGAR CV (PDF)
-            </a>
-        </div>
-    </section>
-
-    <section id="habilidades" class="py-24 container mx-auto px-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div data-aos="fade-right">
-                <h2 class="text-2xl font-black text-white mb-8 italic">Hard Skills</h2>
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="glass p-4 rounded-xl flex items-center gap-3 card-hover">
-                        <i class="fab fa-linux text-blue-500 text-2xl"></i> <span>Hardening Linux</span>
-                    </div>
-                    <div class="glass p-4 rounded-xl flex items-center gap-3 card-hover">
-                        <i class="fab fa-windows text-blue-500 text-2xl"></i> <span>Admistrador Windows</span>
-                    </div>
-                    <div class="glass p-4 rounded-xl flex items-center gap-3 card-hover">
-                        <i class="fas fa-user-secret text-blue-500 text-2xl"></i> <span>Ethical Hacking</span>
-                    </div>
-                    <div class="glass p-4 rounded-xl flex items-center gap-3 card-hover">
-                        <i class="fas fa-network-wired text-blue-500 text-2xl"></i> <span>Mikrotik/Ubiquiti</span>
-                    </div>
-                    <div class="glass p-4 rounded-xl flex items-center gap-3 card-hover">
-                        <i class="fas fa-terminal text-yellow-500 text-2xl"></i> <span>Python / Bash</span>
-                    </div>
-                </div>
-            </div>
-            <div data-aos="fade-left">
-                <h2 class="text-2xl font-black text-white mb-8 italic">Especialidad</h2>
-                <div class="space-y-4">
-                    <div class="glass p-4 rounded-xl border-l-4 border-blue-500">
-                        <h4 class="font-bold text-white">Respuesta a Incidentes (Blue Team)</h4>
-                        <p class="text-sm text-slate-400">Análisis forense, erradicación de amenazas y remediación de infraestructuras comprometidas.</p>
-                    </div>
-                    <div class="glass p-4 rounded-xl border-l-4 border-emerald-500">
-                        <h4 class="font-bold text-white">Seguridad Ofensiva (Red Team)</h4>
-                        <p class="text-sm text-slate-400">Pruebas de intrusión en laboratorios controlados para fortalecer la seguridad perimetral.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="proyectos" class="py-24 container mx-auto px-6">
-        <h2 class="text-3xl font-black text-white mb-12 flex items-center gap-4" data-aos="fade-right">
-            <span class="w-10 h-1 bg-blue-500 rounded-full"></span> PROYECTOS SELECCIONADOS
-        </h2>
-
-        <div class="glass rounded-[3rem] overflow-hidden card-hover p-10 flex flex-col lg:flex-row gap-10 mb-12" data-aos="zoom-in">
+        <div class="glass rounded-[3rem] overflow-hidden card-hover p-10 flex flex-col lg:flex-row-reverse gap-10 mb-20" data-aos="zoom-in">
             <div class="lg:w-1/2">
-                <h3 class="text-3xl font-black text-white mb-4 italic">Monitor de Tasas Caracas</h3>
+                <h3 class="text-3xl font-black text-white mb-4 italic">Cluster de Virtualizacion con Proxmox VE</h3>
                 <p class="text-slate-400 leading-relaxed mb-6">
-                    Sistema automatizado de <b>Web Scraping</b> para sincronización de divisas en tiempo real. Un ejemplo de automatización Full Stack aplicada.
+                    Implementacion de entorno de virtualizacion para servicios criticos con alta disponibilidad, snapshots programados y respaldo automatizado de maquinas virtuales.
                 </p>
-                <div class="flex gap-4">
-                    <span class="text-xs font-bold bg-blue-500/20 text-blue-400 px-3 py-1 rounded">PUPPETEER</span>
+                <div class="flex gap-4 flex-wrap">
+                    <span class="text-xs font-bold bg-cyan-500/20 text-cyan-400 px-3 py-1 rounded">PROXMOX VE</span>
+                    <span class="text-xs font-bold bg-cyan-500/20 text-cyan-400 px-3 py-1 rounded">ZFS</span>
+                    <span class="text-xs font-bold bg-cyan-500/20 text-cyan-400 px-3 py-1 rounded">BACKUP</span>
                 </div>
             </div>
-            <div class="lg:w-1/2 relative group">
-                <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-2xl blur opacity-25"></div>
-                <div class="relative bg-slate-900 rounded-2xl border border-slate-700 overflow-hidden p-8 flex items-center justify-center">
-                    <span class="text-slate-500 font-mono text-sm uppercase italic">Live Currency Sync</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="glass rounded-[3rem] overflow-hidden card-hover p-10 flex flex-col lg:flex-row-reverse gap-10 mb-12" data-aos="zoom-in">
-            <div class="lg:w-1/2">
-                <h3 class="text-3xl font-black text-white mb-4 italic">Forense & Respuesta a Incidentes</h3>
-                <p class="text-slate-400 leading-relaxed mb-6">
-                    Erradicación de malware <b>XMRig</b> y optimización del sistema reduciendo el uso de CPU en un 64%.
-                </p>
-                <div class="flex gap-4">
-                    <span class="text-xs font-bold bg-red-500/20 text-red-400 px-3 py-1 rounded">CYBERSECURITY</span>
-                </div>
-            </div>
-            <div class="lg:w-1/2 relative bg-slate-900 rounded-2xl p-8 border border-slate-700 font-mono text-xs text-red-500">
-                <p>> THREAT: syssls (XMRig Miner)</p>
-                <p>> STATUS: Remediation_Successful</p>
-                <p class="text-white mt-4 font-black">SISTEMA PROTEGIDO Y OPTIMIZADO</p>
-            </div>
-        </div>
-
-        <div class="glass rounded-[3rem] overflow-hidden card-hover p-10 flex flex-col lg:flex-row gap-10 mb-20" data-aos="zoom-in">
-            <div class="lg:w-1/2">
-                <h3 class="text-3xl font-black text-white mb-4 italic">Defensa Activa IPS MikroTik</h3>
-                <p class="text-slate-400 leading-relaxed mb-6">
-                    Prevención de intrusiones con bloqueo automático de IPs maliciosas y alertas en tiempo real vía Telegram.
-                </p>
-                <div class="flex gap-4">
-                    <span class="text-xs font-bold bg-emerald-500/20 text-emerald-400 px-3 py-1 rounded">NET-SEC</span>
-                </div>
-            </div>
-            <div class="lg:w-1/2 relative bg-slate-900 rounded-2xl p-8 border border-slate-700 font-mono text-xs text-emerald-500">
-                <p>> Detecting_Attack_Vector...</p>
-                <p>> IP_Blacklisted: 10.0.0.4</p>
-                <p class="text-white mt-4 font-black italic">ALERT_SENT_TO_BOT</p>
+            <div class="lg:w-1/2 relative bg-slate-900 rounded-2xl p-8 border border-slate-700 font-mono text-xs text-cyan-400">
+                <p>&gt; NODE: pve-01 | pve-02</p>
+                <p>&gt; VM_STATUS: Replication_OK</p>
+                <p>&gt; SNAPSHOT_JOB: Daily_02:00</p>
+                <p class="text-white mt-4 font-black italic">CLUSTER ESTABLE Y REDUNDANTE</p>
             </div>
         </div>
 
@@ -355,222 +200,33 @@
         <h2 class="text-3xl font-black text-white mb-12" data-aos="fade-right">Trayectoria Profesional</h2>
         <div class="space-y-8">
             <div class="glass p-8 rounded-3xl border-l-4 border-emerald-500 card-hover" data-aos="fade-up">
-                <h3 class="text-xl font-bold text-white italic">Encargado de Infraestructura TI</h3>
+                <h3 class="text-xl font-bold text-white italic">System Administrator Linux y Windows</h3>
                 <p class="text-emerald-400 text-sm font-bold mb-4">Damasco | Despliegue Nacional</p>
                 <p class="text-slate-400 text-sm italic">Liderazgo en gestión de servidores centrales y CCTV.</p>
-            </div>
-            <div class="glass p-8 rounded-3xl border-l-4 border-blue-500 card-hover" data-aos="fade-up" data-aos-delay="200">
-                <h3 class="text-xl font-bold text-white italic">Analista NOC</h3>
-                <p class="text-blue-400 text-sm font-bold mb-4">Movilnet</p>
-                <p class="text-slate-400 text-sm">Monitoreo de infraestructura crítica nacional.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-20 text-center border-t border-slate-800">
-        <p class="text-[10px] font-black uppercase tracking-[0.5em] text-slate-600">Odlanyer Castillo | 2026</p>
-    </footer>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({ duration: 1000, once: true });</script>
-</body>
-</html>
-=======
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odlanyer Castillo | Full Stack & IT Expert</title>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <style>
-        body { background-color: #0f172a; color: #cbd5e1; scroll-behavior: smooth; }
-        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); }
-        .gradient-text { background: linear-gradient(90deg, #3b82f6, #10b981); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .card-hover { transition: all 0.3s ease; }
-        .card-hover:hover { transform: translateY(-5px); border-color: #3b82f6; }
-        .wa-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; items-center; font-size: 30px; color: white; z-index: 1000; box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
-    </style>
-</head>
-<body>
-
-    <a href="https://wa.me/584261117516" class="wa-float hover:scale-110 transition" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <nav class="fixed w-full z-50 p-6">
-        <div class="container mx-auto flex justify-between items-center glass p-4 rounded-2xl">
-            <span class="text-xl font-black text-white italic">ODLANYER.<span class="text-blue-500">DEV</span></span>
-            <div class="hidden md:flex gap-8 font-bold text-xs uppercase tracking-widest">
-                <a href="#proyectos" class="hover:text-blue-400">Proyectos</a>
-                <a href="#habilidades" class="hover:text-blue-400">Habilidades</a>
-                <a href="#experiencia" class="hover:text-blue-400">Experiencia</a>
-            </div>
-        </div>
-    </nav>
-
-    <section class="h-screen flex flex-col justify-center items-center px-4 text-center">
-        <div class="mb-8" data-aos="zoom-in">
-            <div class="w-44 h-44 rounded-full border-4 border-blue-500 p-1 shadow-2xl overflow-hidden">
-                <img src="unnamed.jpg" 
-                     alt="Odlanyer Castillo" class="w-full h-full object-cover rounded-full">
-            </div>
-        </div>
-        <h1 class="text-5xl md:text-7xl font-black text-white mb-4" data-aos="fade-up">Odlanyer Castillo</h1>
-        <p class="text-xl text-slate-400 max-w-2xl font-medium mb-8" data-aos="fade-up" data-aos-delay="200">
-            Analista de Sistemas con experiencia en soporte técnico y monitoreo de redes. Especialista en infraestructura TI y desarrollo Full Stack.
-        </p>
-        
-        <div data-aos="fade-up" data-aos-delay="400">
-            <a href="CV odlanyer-2026.pdf" download="CV_Odlanyer_Castillo.pdf" class="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-2xl font-black hover:scale-105 transition shadow-xl shadow-blue-500/20">
-                <i class="fas fa-file-download text-xl"></i>
-                DESCARGAR CV (PDF)
-            </a>
-        </div>
-    </section>
-
-    <section id="habilidades" class="py-24 container mx-auto px-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div data-aos="fade-right">
-                <h2 class="text-2xl font-black text-white mb-8 italic">Habilidades Técnicas</h2>
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="glass p-4 rounded-xl flex items-center gap-3 card-hover">
-                        <i class="fab fa-linux text-blue-500 text-2xl"></i> <span>Linux (Cisco Academy)</span>
-                    </div>
-                    <div class="glass p-4 rounded-xl flex items-center gap-3 card-hover">
-                        <i class="fas fa-network-wired text-blue-500 text-2xl"></i> <span>Mikrotik/Ubiquiti</span>
-                    </div>
-                    <div class="glass p-4 rounded-xl flex items-center gap-3 card-hover">
-                        <i class="fas fa-chart-line text-green-500 text-2xl"></i> <span>Grafana/New Relic</span>
-                    </div>
-                    <div class="glass p-4 rounded-xl flex items-center gap-3 card-hover">
-                        <i class="fab fa-python text-yellow-500 text-2xl"></i> <span>Python Backend</span>
-                    </div>
-                </div>
-            </div>
-            <div data-aos="fade-left">
-                <h2 class="text-2xl font-black text-white mb-8 italic">Habilidades Blandas</h2>
-                <div class="space-y-4">
-                    <div class="glass p-4 rounded-xl border-l-4 border-blue-500">
-                        <h4 class="font-bold text-white">Trabajo en Equipo Colaborativo</h4>
-                        <p class="text-sm text-slate-400">Participación activa en proyectos multidisciplinarios mejorando el rendimiento TI.</p>
-                    </div>
-                    <div class="glass p-4 rounded-xl border-l-4 border-emerald-500">
-                        <h4 class="font-bold text-white">Enfoque Proactivo a Soluciones</h4>
-                        <p class="text-sm text-slate-400">Especialista en resolución de incidencias y optimización de procesos críticos.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="proyectos" class="py-24 container mx-auto px-6">
-        <h2 class="text-3xl font-black text-white mb-12 flex items-center gap-4" data-aos="fade-right">
-            <span class="w-10 h-1 bg-blue-500 rounded-full"></span> PROYECTOS DESTACADOS
-        </h2>
-
-        <div class="glass rounded-[3rem] overflow-hidden card-hover p-10 flex flex-col lg:flex-row gap-10 mb-12" data-aos="zoom-in">
-            <div class="lg:w-1/2">
-                <h3 class="text-3xl font-black text-white mb-4 italic">Monitor de Tasas Caracas</h3>
-                <p class="text-slate-400 leading-relaxed mb-6">
-                    Sistema automatizado mediante **Web Scraping** para la sincronización de divisas en tiempo real, optimizado para la zona horaria de Venezuela (UTC-4).
-                </p>
-                <div class="flex gap-4">
-                    <span class="text-xs font-bold bg-blue-500/20 text-blue-400 px-3 py-1 rounded">PUPPETEER</span>
-                    <span class="text-xs font-bold bg-blue-500/20 text-blue-400 px-3 py-1 rounded">REST API</span>
-                </div>
-            </div>
-            <div class="lg:w-1/2 relative group">
-                <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-                <div class="relative bg-slate-900 rounded-2xl border border-slate-700 overflow-hidden shadow-2xl">
-                    <div class="bg-slate-800 px-4 py-2 flex gap-2 border-b border-slate-700">
-                        <div class="w-2 h-2 rounded-full bg-red-500"></div>
-                        <div class="w-2 h-2 rounded-full bg-yellow-500"></div>
-                        <div class="w-2 h-2 rounded-full bg-green-500"></div>
-                    </div>
-                    <div class="p-8 text-center bg-slate-800/50">
-                        <span class="text-slate-500 font-mono text-sm tracking-widest uppercase italic">Previsualización: Sincronización Caracas VZLA</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="glass rounded-[3rem] overflow-hidden card-hover p-10 flex flex-col lg:flex-row-reverse gap-10" data-aos="zoom-in">
-            <div class="lg:w-1/2">
-                <h3 class="text-3xl font-black text-white mb-4 italic">Defensa Activa IPS MikroTik</h3>
-                <p class="text-slate-400 leading-relaxed mb-6">
-                    Sistema de prevención de intrusiones automatizado que detecta ataques de denegación de servicio (DoS), ejecuta el bloqueo inmediato de la IP atacante y notifica eventos críticos en tiempo real vía <b>Telegram Bot API</b>.
-                </p>
-                <div class="flex gap-4">
-                    <span class="text-xs font-bold bg-emerald-500/20 text-emerald-400 px-3 py-1 rounded">ROUTEROS SCRIPTING</span>
-                    <span class="text-xs font-bold bg-emerald-500/20 text-emerald-400 px-3 py-1 rounded">FIREWALL IPS</span>
-                </div>
-            </div>
-            <div class="lg:w-1/2 relative group">
-                <div class="absolute -inset-1 bg-gradient-to-r from-emerald-600 to-blue-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-                <div class="relative bg-slate-900 rounded-2xl border border-slate-700 overflow-hidden shadow-2xl">
-                    <div class="bg-slate-800 px-4 py-2 flex gap-2 border-b border-slate-700">
-                        <div class="w-2 h-2 rounded-full bg-red-500"></div>
-                        <div class="w-2 h-2 rounded-full bg-yellow-500"></div>
-                        <div class="w-2 h-2 rounded-full bg-green-500"></div>
-                    </div>
-                    <div class="p-8 font-mono text-xs text-emerald-500">
-                        <div class="flex items-center gap-2 mb-2 italic">
-                            <i class="fas fa-terminal text-emerald-600"></i>
-                            <span>Status: Monitoring_Interfaces...</span>
-                        </div>
-                        <div class="space-y-1 opacity-80">
-                            <p>> Detecting_ICMP_Flood...</p>
-                            <p>> Adding_to_Blacklist: 10.0.0.4</p>
-                            <p>> Telegram_Alert: Sent_Successfully</p>
-                            <p class="text-white mt-4 font-black uppercase tracking-widest">Servicio Denegado Automáticamente</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experiencia" class="py-24 container mx-auto px-6">
-        <h2 class="text-3xl font-black text-white mb-12" data-aos="fade-right">Trayectoria Profesional</h2>
-        <div class="space-y-8">
-            <div class="glass p-8 rounded-3xl border-l-4 border-emerald-500 card-hover" data-aos="fade-up">
-                <h3 class="text-xl font-bold text-white italic">Encargado de Infraestructura TI</h3>
-                <p class="text-emerald-400 text-sm font-bold mb-4">Damasco | Despliegue Nacional</p>
-                <p class="text-slate-400 text-sm italic">Liderazgo en apertura de tiendas, gestión de servidores centrales y CCTV.</p>
             </div>
             <div class="glass p-8 rounded-3xl border-l-4 border-cyan-500 card-hover" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-xl font-bold text-white italic">Analista de Soporte Técnico</h3>
-                <p class="text-cyan-400 text-sm font-bold mb-4">Remoters</p>
-                <p class="text-slate-400 text-sm italic">Atención y resolución de tickets de soporte técnico de alta prioridad y participación en proyectos de mejora del servicio.</p>
+                <h3 class="text-xl font-bold text-white italic">Consultor de Soporte Técnico Corporativo</h3>
+                <p class="text-cyan-400 text-sm font-bold mb-4">Servicios TI Empresariales</p>
+                <p class="text-slate-400 text-sm italic">Gestión de incidencias de alta prioridad, documentación operativa y mejora de la experiencia del usuario en entornos corporativos.</p>
             </div>
-            <div class="glass p-8 rounded-3xl border-l-4 border-blue-500 card-hover" data-aos="fade-up" data-aos-delay="200">
-                <h3 class="text-xl font-bold text-white italic">Analista de Centro de Operaciones (NOC)</h3>
-                <p class="text-blue-400 text-sm font-bold mb-4">Telecomunicaciones Movilnet</p>
-                <p class="text-slate-400 text-sm">Monitoreo y gestión de incidentes en la infraestructura crítica nacional de telecomunicaciones.</p>
+            <div class="glass p-8 rounded-3xl border-l-4 border-violet-500 card-hover" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-xl font-bold text-white italic">Desarrollador Full Stack</h3>
+                <p class="text-violet-400 text-sm font-bold mb-4">Universidad en México</p>
+                <p class="text-slate-400 text-sm italic">Diseño e implementación de soluciones web académicas, integrando frontend y backend con enfoque en rendimiento, seguridad y mantenibilidad.</p>
+            </div>
+            <div class="glass p-8 rounded-3xl border-l-4 border-blue-500 card-hover" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-xl font-bold text-white italic">Analista NOC</h3>
+                <p class="text-blue-400 text-sm font-bold mb-4">Movilnet</p>
+                <p class="text-slate-400 text-sm">Monitoreo de infraestructura crítica nacional.</p>
             </div>
         </div>
     </section>
 
     <footer class="py-20 text-center border-t border-slate-800">
-        <div class="flex justify-center gap-8 mb-6 text-2xl">
-            <a href="https://linkedin.com/in/odlanyer-castillo" class="text-slate-400 hover:text-blue-500 transition"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:Odlanyer.cr12@gmail.com" class="text-slate-400 hover:text-blue-500 transition"><i class="fas fa-envelope"></i></a>
-        </div>
-        <p class="text-[10px] font-black uppercase tracking-[0.5em] text-slate-600">Odlanyer Castillo © 2026</p>
+        <p class="text-[10px] font-black uppercase tracking-[0.5em] text-slate-600">Odlanyer Castillo | 2026</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 1000, once: true });
-    </script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
 </body>
 </html>
-</body>
-
-</html>
->>>>>>> 907e99f2cbdeac60ca82e6ed4886a2d0fe647c50
